@@ -1,0 +1,82 @@
+// import React, { useState } from "react";
+
+// const Workout = () => {
+//   const [HandleModal, setHandleModal] = useState(0);
+//   const [result, setResult] = useState([]);
+//   const [NextDisable, setNextDisable] = useState(true);
+//   const [PrevDisable, setPrevDisable] = useState(true);
+//   const arr = [
+//     {
+//       name: "Todays workout plan",
+//       description: "We're gonna three fundamental exercises",
+//     },
+//     {
+//       name: "Yesterdays workout plan",
+//       description: "We're gonna four fundamental exercises",
+//     },
+//     {
+//       name: "Wensdays workout plan",
+//       description: "We're gonna four fundamental exercises",
+//     },
+//   ];
+
+//   //   console.log(result.indexOf((val) => val));
+//   return (
+//     <div>
+//       <div className="flex justify-center items-center">
+//         <button
+//           onClick={() => {
+//             setHandleModal(0);
+//           }}
+//           className="text-2xl bg-green-500 text-white p-2 rounded-sm m-4"
+//         >
+//           Restart
+//         </button>
+//         <button
+//           onClick={() => {
+//             if (HandleModal != 0) {
+//               setHandleModal(HandleModal - 1);
+//               //   setNextDisable(false);
+//             }
+//             setPrevDisable(false);
+//             setResult(arr[HandleModal]);
+//           }}
+//           className="text-2xl bg-green-500 text-white p-2 rounded-sm m-4"
+//         >
+//           Prev
+//         </button>
+//         <button
+//           onClick={() => {
+//             if (HandleModal != arr.length - 1) {
+//               setHandleModal(HandleModal + 1);
+//             } else {
+//               NextDisable == arr.length - 1
+//                 ? setNextDisable(true)
+//                 : setNextDisable(false);
+//             }
+//             setResult(arr[HandleModal]);
+//           }}
+//           className={
+//             NextDisable
+//               ? "text-2xl bg-green-500 text-white p-2 rounded-sm m-4"
+//               : "bg-green-200 text-gray-300 p-2 rounded-sm m-4 text-2xl "
+//           }
+//         >
+//           Next
+//         </button>
+//       </div>
+//       <div>
+//         <div>
+//           {/* {result ? ( */}
+//           <div>
+//             <p>{result.name}</p>
+//             <p>{result.description}</p>
+//           </div>
+//           {/* ) : null} */}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Workout;
